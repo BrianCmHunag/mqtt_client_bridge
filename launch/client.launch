@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="mqtt_client" pkg="mqtt_client_bridge" type="mqtt_client_thread_node.py" respawn="false" output="screen">
+    <param name="ip" value="127.0.0.1" />
+    <param name="port" value="1883" />
+    <param name="client_pub_to_this_topic" value="client_pub_to_this_topic" />
+    <param name="client_sub_this_topic" value="client_sub_this_topic" />
+  </node>
+</launch>
